@@ -1,0 +1,46 @@
+=============================== INTRODUCTION ==================================
+
+
+During this project, we had to drive a Formula One car...
+programmatically. In order to to this, we drave your car on a map, giving it
+instructions (such as  accelerate, brake, or turn left). 
+You should return a correct stream of instructions (no crash, and the 
+instructions must lead to the finish line). The speed of our Formula One 
+car is very important: the less instructions we need, the better.
+In this project, we focused on the algorithms. Therefore, we were given
+everything we needed to run and test your project:
+- A working CMakeLists.txt
+- We only modified the source files. To build the project, we had to call 
+cmake in the directory where we wanted to compile (ideally not in the afs 
+if we wanted it to run fast). Cmake will generate a Makefile that will create
+a dynamic library used by the viewer.
+- A viewer to watch, in 3D, how our Formula One fares on the asphalt. 
+Everything is done via the UI. You can compile and launch the viewer 
+with make run 
+- An API (some functions) to move your car (explained in control.h)
+
+
+================================== USAGE ======================================
+
+create a build directory and then go into it
+
+launch cmake with the path to the directory containing Cmakelist.txt
+
+write 'make' to create the dynamic library
+
+write 'make check' with a .frc file as argument to test specifficaly a race
+
+write 'make run' to execute the program, it will ask for a .frc file.
+
+
+============================== IMPLEMENTATION =================================
+
+
+We are using the dijkstra's algorithm. It returns a table of unsigned that 
+represent the distance between his current case and the end. Then, by using
+this table, we compute the vector to the next case (whish just a smaller value
+than the current one). The cross product give us an angle that is used to know
+if we need to turn.
+
+To move once we are alinged with the next position we use a clone army that
+tells us where is the furthest point towards the end we can acces.

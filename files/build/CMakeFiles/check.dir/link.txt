@@ -1,0 +1,1 @@
+gcc  -Wall -Wextra -Werror -std=c99 -pedantic   CMakeFiles/check.dir/tests/test.c.o  -o check  -L/home/baudes_h/afs/baudes_h-formulaone/files/control -rdynamic libformulaone.so -lformulaonecontrol -lm -Wl,-rpath,/home/baudes_h/afs/baudes_h-formulaone/files/control:/home/baudes_h/afs/baudes_h-formulaone/files/build 

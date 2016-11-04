@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/baudes_h/afs/baudes_h-formulaone/files/src/control.h
+math.h
+-
+
+/home/baudes_h/afs/baudes_h-formulaone/files/tests/test.c
+../src/control.h
+/home/baudes_h/afs/baudes_h-formulaone/files/src/control.h
+test.h
+/home/baudes_h/afs/baudes_h-formulaone/files/tests/test.h
+
+/home/baudes_h/afs/baudes_h-formulaone/files/tests/test.h
+stdio.h
+-
+stdlib.h
+-
+

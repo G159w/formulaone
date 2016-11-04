@@ -1,0 +1,32 @@
+============================= HENRI ==================================
+
+CAR_MOVE [OK]
+DIAG [OK]
+DIAG_NEXT [OK]
+
+============================ PAUL ====================================
+
+DIJKSTRA [OK]
+CAR_MOVE [OK]
+CAR_OPTI [OK]
+CLONE_ARMY [OK]
+
+============================= TODO ====================================
+
+transpose matrix returned by path to solve conflicts between x and y [KO]
+
+clone army needs to be reduced (10 is too big of a recursion) => 6 seems good
+
+x values not always valid (error on some maps) => car cannot pas gaps of 2 or
+less
+
+need to add diagonal searching for next position [OK]
+
+need to affine the car army to be able not to crash into walls when car is too
+close to a wall
+
+conflict between alignement function and clone army movements
+
+the car has a tendency to crash if there is no grass tile arround blocks
+
+cant resolve map that are too tricky
